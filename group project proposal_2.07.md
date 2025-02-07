@@ -4,9 +4,9 @@
  
 ## Team 
  
-Rianne Parker (@DatawithParker) 
-Marko Masnikosa (@data11y)  - owner of repository 
-Darwyn Rosario (@darosari) 
+- Rianne Parker (@DatawithParker) 
+- Marko Masnikosa (@data11y)  - owner of repository 
+- Darwyn Rosario (@darosari) 
  
 # Introduction 
  
