@@ -26,17 +26,17 @@ Transportation Authorities: Insights into the correlation between subway delays 
 # Literature Review 
  
 ## Related Work 
-Existing studies have integrated weather data with rideshare pricing, but few consider public transit as a key factor. 
-Key References: 
-Study on rideshare surge pricing and alternative transportation 
-Research on congestion pricing and demand elasticity 
-ML models predicting Uber/Lyft demand in urban settings 
-Impact of weather on transportation choices 
+- Existing studies have integrated weather data with rideshare pricing, but few consider public transit as a key factor. 
+- Key References: 
+- Study on rideshare surge pricing and alternative transportation 
+- Research on congestion pricing and demand elasticity 
+- ML models predicting Uber/Lyft demand in urban settings 
+- Impact of weather on transportation choices 
  
 ## Stakeholder Needs 
-Riders: Need accurate price predictions for better decision-making. 
-Rideshare Platforms: Seek to optimize pricing based on transit alternatives. 
-City Planners: Can use insights to improve transit reliability and pricing structures. 
+- Riders: Need accurate price predictions for better decision-making. 
+- Rideshare Platforms: Seek to optimize pricing based on transit alternatives. 
+- City Planners: Can use insights to improve transit reliability and pricing structures. 
  
 ## Feeback 
 While integrating weather data with rideshare pricing is common, the impact of other transportation modes is often overlooked. We believe MTA subway delays significantly influence rideshare demand. Since surge pricing algorithms are proprietary, our approach aims to incorporate transit alternatives into predictive models, offering NYC residents insights into potential rideshare price fluctuations and alternative commuting options. 
@@ -44,62 +44,62 @@ While integrating weather data with rideshare pricing is common, the impact of o
 # Data 
  
 ## MTA Delays 
-Link: https://data.ny.gov/Transportation/MTA-Subway-Trains-Delayed-Beginning-2020/wx2t-qtaz/about_data 
-Description:  
-Rows = 40.5 k 
-Columns = 7 
-Provenance: Reliable government source with historical trends. 
-Metadata Available = Yes 
+- Link: https://data.ny.gov/Transportation/MTA-Subway-Trains-Delayed-Beginning-2020/wx2t-qtaz/about_data 
+- Description:This dataset reflects the number and percentage of subway trains delayed per weekday based on scheduled service, broken down into specific delay categories.
+- Rows = 40.5k
+- Columns = 7 
+- Provenance: Reliable government source with historical trends. 
+- Metadata Available = Yes 
  
 ## MTA Ridership 
-Link: https://data.ny.gov/Transportation/MTA-Daily-Ridership-Data-2020-2025/vxuj-8kew/about_data 
-Description: Ridership and traffic estimates for subways (including the Staten Island Railway), buses, Long Island Rail Road, Metro-North Railroad, Access-A-Ride, and Bridges and Tunnels, beginning 3/1/2020, and provides a percentage comparison against a comparable pre-pandemic date. 
-Rows = 1,776 
-Columns = 15 
-Provenance: Reliable government source with historical trends 
-Metadata Available = Yes 
+- Link: https://data.ny.gov/Transportation/MTA-Daily-Ridership-Data-2020-2025/vxuj-8kew/about_data 
+- Description: Ridership and traffic estimates for subways (including the Staten Island Railway), buses, Long Island Rail Road, Metro-North Railroad, Access-A-Ride, and Bridges and Tunnels, beginning 3/1/2020, and provides a percentage comparison against a comparable pre-pandemic date. 
+- Rows = 1,776 
+- Columns = 15 
+- Provenance: Reliable government source with historical trends 
+- Metadata Available = Yes 
  
 ## Rideshare Price Data (Uber-NYC) 
-Link: https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city 
-Description: This dataset is a Monthly report including weekly total dispatched trips and unique dispatched vehicles by base tabulated from FHV Trip Record submissions made by bases. The TLC publishes base trip record data as submitted by the bases.  
-Rows = 565,000 
-Columns = 4 
-Provenance: Sourced from Taxi and Limousine Commission (TLC) for NYC 
-Metadata Available = Yes 
+- Link: https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city 
+- Description: This dataset is a Monthly report including weekly total dispatched trips and unique dispatched vehicles by base tabulated from FHV Trip Record submissions made by bases. The TLC publishes base trip record data as submitted by the bases.  
+- Rows = 565,000 
+- Columns = 4 
+- Provenance: Sourced from Taxi and Limousine Commission (TLC) for NYC 
+- Metadata Available = Yes 
  
 ## Other Sources: 
-US EPA Weather Data: https://www.epa.gov/hydrowq/meteorological-data-new-york 
-NYC Weather Data: https://www.kaggle.com/datasets/aadimator/nyc-weather-2016-to-2022 	 
-NYC.gov Taxi and Limousine Commission data: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page 
+- US EPA Weather Data: https://www.epa.gov/hydrowq/meteorological-data-new-york 
+- NYC Weather Data: https://www.kaggle.com/datasets/aadimator/nyc-weather-2016-to-2022 	 
+- NYC.gov Taxi and Limousine Commission data: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page 
  
  
 # Methods  
  
 ## Data collection 
-Combining data from different formats and sources 
+- Combining data from different formats and sources 
 
 ## Data Preprocessing 
-Handle missing values via imputation  
-Removing outliers. 
-Potentially smoothing data with a moving average. 
-Trend and seasonality handling 
-Normalize numerical features 
-Encode categorical variables (one-hot encoding) 
+- Handle missing values via imputation  
+- Removing outliers
+- Potentially smoothing data with a moving average 
+- Trend and seasonality handling 
+- Normalize numerical features 
+- Encode categorical variables (one-hot encoding) 
 
 ## Feature Engineering 
-Extract features like average delay impact on pricing 
+- Extract features like average delay impact on pricing 
 
 ## Model Selection 
-Apply supervised learning models (Regression, Classification) 
-Apply time series modeling such as ARIMAX 
+- Apply supervised learning models (Regression, Classification) 
+- Apply time series modeling such as ARIMAX 
 
 ## Evaluation 
-Split dataset (80/20 train-test) 
-Use cross-validation 
-Evaluate with RMSE/MAE (for regression) and accuracy (for classification) 
+- Split dataset (80/20 train-test) 
+- Use cross-validation 
+- Evaluate with RMSE/MAE (for regression) and accuracy (for classification) 
 
 ## Interpretability 
-Use visualizations to highlight key price influencers 
+- Use visualizations to highlight key price influencers 
  
  
 # Project Plan 
