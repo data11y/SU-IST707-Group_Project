@@ -19,9 +19,9 @@ Model Options: Clustering, Regression, Classification (Supervised Learning)
 Significance: This model will estimate rideshare prices using external factors that are often overlooked, providing price forecasts and alternative transportation options for users. 
  
 ## Who Cares? 
-Rideshare Companies: They can optimize surge pricing strategies based on external transportation conditions. 
-NYC Residents: Users can plan rides better, avoiding high surge prices based on predicted conditions. 
-Transportation Authorities: Insights into the correlation between subway delays and increased reliance on rideshare services. 
+- Rideshare Companies: They can optimize surge pricing strategies based on external transportation conditions. 
+- NYC Residents: Users can plan rides better, avoiding high surge prices based on predicted conditions. 
+- Transportation Authorities: Insights into the correlation between subway delays and increased reliance on rideshare services. 
  
 # Literature Review 
  
