@@ -1,6 +1,6 @@
 #### Project Proposal
 
-##Title: Predicting NYC Rideshare Prices Using Subway Delays, Ridership, and Weather Conditions 
+### Title: Predicting NYC Rideshare Prices Using Subway Delays, Ridership, and Weather Conditions 
  
 ### Team 
  
