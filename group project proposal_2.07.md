@@ -15,8 +15,8 @@ The goal of this project is to develop a predictive model for NYC rideshare (Ube
  
 ## New Approach 
 Our approach integrates multiple datasets—including subway activity, weather data, and rideshare price fluctuations—to build predictive models using supervised learning techniques such as regression and classification. 
-Model Options: Clustering, Regression, Classification (Supervised Learning) 
-Significance: This model will estimate rideshare prices using external factors that are often overlooked, providing price forecasts and alternative transportation options for users. 
+- Model Options: Clustering, Regression, Classification (Supervised Learning) 
+- Significance: This model will estimate rideshare prices using external factors that are often overlooked, providing price forecasts and alternative transportation options for users. 
  
 ## Who Cares? 
 - Rideshare Companies: They can optimize surge pricing strategies based on external transportation conditions. 
