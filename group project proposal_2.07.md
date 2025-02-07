@@ -15,13 +15,13 @@ The goal of this project is to develop a predictive model for NYC rideshare (Ube
  
 ## New Approach 
 Our approach integrates multiple datasets—including subway activity, weather data, and rideshare price fluctuations—to build predictive models using supervised learning techniques such as regression and classification. 
-- Model Options: Clustering, Regression, Classification (Supervised Learning) 
-- Significance: This model will estimate rideshare prices using external factors that are often overlooked, providing price forecasts and alternative transportation options for users. 
+- **Model Options**: Clustering, Regression, Classification (Supervised Learning) 
+- **Significance**: This model will estimate rideshare prices using external factors that are often overlooked, providing price forecasts and alternative transportation options for users. 
  
 ## Who Cares? 
-- Rideshare Companies: They can optimize surge pricing strategies based on external transportation conditions. 
-- NYC Residents: Users can plan rides better, avoiding high surge prices based on predicted conditions. 
-- Transportation Authorities: Insights into the correlation between subway delays and increased reliance on rideshare services. 
+- **Rideshare Companies**: They can optimize surge pricing strategies based on external transportation conditions. 
+- **NYC Residents**: Users can plan rides better, avoiding high surge prices based on predicted conditions. 
+- **Transportation Authorities**: Insights into the correlation between subway delays and increased reliance on rideshare services. 
  
 # Literature Review 
  
@@ -34,9 +34,9 @@ Our approach integrates multiple datasets—including subway activity, weather d
 - Impact of weather on transportation choices 
  
 ## Stakeholder Needs 
-- Riders: Need accurate price predictions for better decision-making. 
-- Rideshare Platforms: Seek to optimize pricing based on transit alternatives. 
-- City Planners: Can use insights to improve transit reliability and pricing structures. 
+- **Riders**: Need accurate price predictions for better decision-making. 
+- **Rideshare Platforms**: Seek to optimize pricing based on transit alternatives. 
+- **City Planners**: Can use insights to improve transit reliability and pricing structures. 
  
 ## Feeback 
 While integrating weather data with rideshare pricing is common, the impact of other transportation modes is often overlooked. We believe MTA subway delays significantly influence rideshare demand. Since surge pricing algorithms are proprietary, our approach aims to incorporate transit alternatives into predictive models, offering NYC residents insights into potential rideshare price fluctuations and alternative commuting options. 
@@ -44,33 +44,33 @@ While integrating weather data with rideshare pricing is common, the impact of o
 # Data 
  
 ## MTA Delays 
-- Link: https://data.ny.gov/Transportation/MTA-Subway-Trains-Delayed-Beginning-2020/wx2t-qtaz/about_data 
-- Description:This dataset reflects the number and percentage of subway trains delayed per weekday based on scheduled service, broken down into specific delay categories.
-- Rows = 40.5k
-- Columns = 7 
-- Provenance: Reliable government source with historical trends. 
-- Metadata Available = Yes 
+- **Link**: https://data.ny.gov/Transportation/MTA-Subway-Trains-Delayed-Beginning-2020/wx2t-qtaz/about_data 
+- **Description**:This dataset reflects the number and percentage of subway trains delayed per weekday based on scheduled service, broken down into specific delay categories.
+- **Rows** = 40.5k
+- **Columns** = 7 
+- **Provenance**: Reliable government source with historical trends. 
+- **Metadata Available** = Yes 
  
 ## MTA Ridership 
-- Link: https://data.ny.gov/Transportation/MTA-Daily-Ridership-Data-2020-2025/vxuj-8kew/about_data 
-- Description: Ridership and traffic estimates for subways (including the Staten Island Railway), buses, Long Island Rail Road, Metro-North Railroad, Access-A-Ride, and Bridges and Tunnels, beginning 3/1/2020, and provides a percentage comparison against a comparable pre-pandemic date. 
-- Rows = 1,776 
-- Columns = 15 
-- Provenance: Reliable government source with historical trends 
-- Metadata Available = Yes 
+- **Link**: https://data.ny.gov/Transportation/MTA-Daily-Ridership-Data-2020-2025/vxuj-8kew/about_data 
+- **Description**: Ridership and traffic estimates for subways (including the Staten Island Railway), buses, Long Island Rail Road, Metro-North Railroad, Access-A-Ride, and Bridges and Tunnels, beginning 3/1/2020, and provides a percentage comparison against a comparable pre-pandemic date. 
+- **Rows** = 1,776 
+- **Columns** = 15 
+- **Provenance**: Reliable government source with historical trends 
+- **Metadata Available** = Yes 
  
 ## Rideshare Price Data (Uber-NYC) 
-- Link: https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city 
-- Description: This dataset is a Monthly report including weekly total dispatched trips and unique dispatched vehicles by base tabulated from FHV Trip Record submissions made by bases. The TLC publishes base trip record data as submitted by the bases.  
-- Rows = 565,000 
-- Columns = 4 
-- Provenance: Sourced from Taxi and Limousine Commission (TLC) for NYC 
-- Metadata Available = Yes 
+- **Link**: https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city 
+- **Description**: This dataset is a Monthly report including weekly total dispatched trips and unique dispatched vehicles by base tabulated from FHV Trip Record submissions made by bases. The TLC publishes base trip record data as submitted by the bases.  
+- **Rows** = 565,000 
+- **Columns** = 4 
+- **Provenance**: Sourced from Taxi and Limousine Commission (TLC) for NYC 
+- **Metadata Available** = Yes 
  
 ## Other Sources: 
-- US EPA Weather Data: https://www.epa.gov/hydrowq/meteorological-data-new-york 
-- NYC Weather Data: https://www.kaggle.com/datasets/aadimator/nyc-weather-2016-to-2022 	 
-- NYC.gov Taxi and Limousine Commission data: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page 
+- **US EPA Weather Data**: https://www.epa.gov/hydrowq/meteorological-data-new-york 
+- **NYC Weather Data**: https://www.kaggle.com/datasets/aadimator/nyc-weather-2016-to-2022 	 
+- **NYC.gov Taxi and Limousine Commission data**: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page 
  
  
 # Methods  
