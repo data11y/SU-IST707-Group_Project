@@ -120,8 +120,8 @@ While integrating weather data with rideshare pricing is common, the impact of o
  
 | Risk                         | Mitigation Strategy                                           |
 |------------------------------|--------------------------------------------------------------|
-| Missing/Inconsistent Data     | Apply imputation techniques, remove anomalies               |
-| Model Underperformance       | Experiment with different algorithms & hyperparameter tuning |
+| **Missing/Inconsistent Data**     | Apply imputation techniques, remove anomalies               |
+| **Model Underperformance**       | Experiment with different algorithms & hyperparameter tuning |
 | Data Integration Challenges  | Standardize formats before merging datasets                 |
 | Unforeseen Stakeholder Needs | Stay flexible and adjust model based on insights           |
 | Computational Limitations    | Use cloud resources if needed                               |
