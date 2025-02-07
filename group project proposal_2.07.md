@@ -1,82 +1,127 @@
-# Rubric for Project Proposal
+# Project Proposal
 
-Your project proposal will follow the format of a standard research proposal, and will be written in markdown format.  It will be saved in the same directory as this rubric, and simply named "proposal.md."  It should not be longer than 2-3 pages max, and may be shorter.  It will have the following sections.
+###Title: Predicting NYC Rideshare Prices Using Subway Delays, Ridership, and Weather Conditions 
+ 
+### Team 
+ 
+Rianne Parker (@DatawithParker) 
+Marko Masnikosa (@data11y)  - owner of repository 
+Darwyn Rosario (@darosari) 
+ 
+### Introduction 
+ 
+# Objective 
+The goal of this project is to develop a predictive model for NYC rideshare (Uber) prices using subway delays, ridership, and weather conditions. This will enable stakeholders to understand price fluctuations and make informed decisions. 
+ 
+# New Approach 
+Our approach integrates multiple datasets—including subway activity, weather data, and rideshare price fluctuations—to build predictive models using supervised learning techniques such as regression and classification. 
+Model Options: Clustering, Regression, Classification (Supervised Learning) 
+Significance: This model will estimate rideshare prices using external factors that are often overlooked, providing price forecasts and alternative transportation options for users. 
+ 
+# Who Cares? 
+Rideshare Companies: They can optimize surge pricing strategies based on external transportation conditions. 
+NYC Residents: Users can plan rides better, avoiding high surge prices based on predicted conditions. 
+Transportation Authorities: Insights into the correlation between subway delays and increased reliance on rideshare services. 
+ 
+### Literature Review 
+ 
+# Related Work 
+Existing studies have integrated weather data with rideshare pricing, but few consider public transit as a key factor. 
+Key References: 
+Study on rideshare surge pricing and alternative transportation 
+Research on congestion pricing and demand elasticity 
+ML models predicting Uber/Lyft demand in urban settings 
+Impact of weather on transportation choices 
+ 
+# Stakeholder Needs 
+Riders: Need accurate price predictions for better decision-making. 
+Rideshare Platforms: Seek to optimize pricing based on transit alternatives. 
+City Planners: Can use insights to improve transit reliability and pricing structures. 
+ 
+# Feeback 
+While integrating weather data with rideshare pricing is common, the impact of other transportation modes is often overlooked. We believe MTA subway delays significantly influence rideshare demand. Since surge pricing algorithms are proprietary, our approach aims to incorporate transit alternatives into predictive models, offering NYC residents insights into potential rideshare price fluctuations and alternative commuting options. 
+ 
+### Data 
+ 
+# MTA Delays 
+Link: https://data.ny.gov/Transportation/MTA-Subway-Trains-Delayed-Beginning-2020/wx2t-qtaz/about_data 
+Description:  
+Rows = 40.5 k 
+Columns = 7 
+Provenance: Reliable government source with historical trends. 
+Metadata Available = Yes 
+ 
+# MTA Ridership 
+Link: https://data.ny.gov/Transportation/MTA-Daily-Ridership-Data-2020-2025/vxuj-8kew/about_data 
+Description: Ridership and traffic estimates for subways (including the Staten Island Railway), buses, Long Island Rail Road, Metro-North Railroad, Access-A-Ride, and Bridges and Tunnels, beginning 3/1/2020, and provides a percentage comparison against a comparable pre-pandemic date. 
+Rows = 1,776 
+Columns = 15 
+Provenance: Reliable government source with historical trends 
+Metadata Available = Yes 
+ 
+# Rideshare Price Data (Uber-NYC) 
+Link: https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city 
+Description: This dataset is a Monthly report including weekly total dispatched trips and unique dispatched vehicles by base tabulated from FHV Trip Record submissions made by bases. The TLC publishes base trip record data as submitted by the bases.  
+Rows = 565,000 
+Columns = 4 
+Provenance: Sourced from Taxi and Limousine Commission (TLC) for NYC 
+Metadata Available = Yes 
+ 
+# Other Sources: 
+US EPA Weather Data: https://www.epa.gov/hydrowq/meteorological-data-new-york 
+NYC Weather Data: https://www.kaggle.com/datasets/aadimator/nyc-weather-2016-to-2022 	 
+NYC.gov Taxi and Limousine Commission data: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page 
+ 
+ 
+#### Methods  
+ 
+# Data collection 
+Combining data from different formats and sources 
+# Data Preprocessing 
+Handle missing values via imputation  
+Removing outliers. 
+Potentially smoothing data with a moving average. 
+Trend and seasonality handling 
+Normalize numerical features 
+Encode categorical variables (one-hot encoding) 
+# Feature Engineering 
+Extract features like average delay impact on pricing 
+# Model Selection 
+Apply supervised learning models (Regression, Classification) 
+Apply time series modeling such as ARIMAX 
+# Evaluation 
+Split dataset (80/20 train-test) 
+Use cross-validation 
+Evaluate with RMSE/MAE (for regression) and accuracy (for classification) 
+# Interpretability 
+Use visualizations to highlight key price influencers 
+ 
+ 
+### Project Plan 
+ 
+| Period        | Activity                                        | Milestone |
+|--------------|------------------------------------------------|-----------------------------------------------|
+| 2/6         | Establish Project Teams, Finalize Proposals    | Submit Project Proposals (Checkpoint 1)      |
+| 2/12 - 2/25 | Stakeholder Analysis, Literature Review, Initial Dataset Assessment | Completed Stakeholder Analysis & Dataset Acquisition |
+| 2/26 - 3/10 | Exploratory Data Analysis (EDA), Feature Engineering | Identified Key Trends & Derived New Features |
+| 3/11 - 3/24 | Preprocessing & Data Cleaning                  | Data Formatted & Missing Values Handled      |
+| 3/25 - 4/07 | Model Selection & Training                     | Initial Model Prototypes Tested; (Checkpoint 2) |
+| 4/08 - 4/21 | Hyperparameter Tuning & Validation             | Model Performance Optimized                  |
+| 4/22 - 5/05 | Model Interpretability & Documentation         | Insights Extracted & Final Report Drafted; Project Presentations (Checkpoint 3) |
+| 5/06       | Final Report Submission                         | Completed Project Submission                 |
 
-### Title
+ 
+### Risks 
+ 
+| Risk                         | Mitigation Strategy                                           |
+|------------------------------|--------------------------------------------------------------|
+| Missing/Inconsistent Data     | Apply imputation techniques, remove anomalies               |
+| Model Underperformance       | Experiment with different algorithms & hyperparameter tuning |
+| Data Integration Challenges  | Standardize formats before merging datasets                 |
+| Unforeseen Stakeholder Needs | Stay flexible and adjust model based on insights           |
+| Computational Limitations    | Use cloud resources if needed                               |
 
-A nice short title for your project, helping me to understand roughly what it is you are trying to do.
-
-### Team
-
-Each project will have a team of 3-5 people, and one person will serve as the point of contact (POC) for the team who will own the repository. The POC will be responsible for managing the repository, and I will only grade submissions in this repository. Everyone will be granted access to this repository.  This section should include the full names of each team member, **along with their github ids**, and indicate the POC for the group.
-
-### Introduction
-
-This section will introduce your project.  It will _briefly_ answer the following questions from [Heilmeier's catechism](https://www.darpa.mil/work-with-us/heilmeier-catechism).
-
-- What are you trying to do? Articulate your objectives using absolutely no jargon.
-- What is new in your approach and why do you think it will be successful?  (be brief here, you can expand more later!)
-- Who cares? If you are successful, what difference will it make?
-
-### Literature Review
-
-This section will answer the second question from Heilmeier's catechism:
-
-- How is it done today, and what are the limits of current practice?
-
-Here, you will review methods that have been attempted (use [Google Scholar](https://scholar.google.com) to find out), or cite literature to provide evidence that your method is novel.  You should include citations to reviewed material.  Use [github's markdown syntax for footnotes](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes)[^1].
-
-Also use this section to establish _stakeholder needs_.  That is, for stakeholders that have specific but perhaps non-obvious needs (e.g., a city traffic planner will need to know about temporal variation in pedestrian traffic and the density of office buildings in order to determine the best placement of traffic signals).  You should list each of your stakeholders here, explain why they are stakeholders, and the clarify needs. Recall from our lecture that I do not expect you to do your own stakeholder interviews, but I do expect you to do a little research online.
-
-### Data and Methods
-
-This section will introduce your data and specify your modeling approach.
-
-#### Data
-
-You will include a link to your data, along with summary information (e.g., how many columns, rows, and the types of features).  Also include some discussion about the data's provenance - how do you know the data is reliable?  Does it have meta data, and if not, what else do you know about it?  If you anticipate needing more than one dataset, please indicate each dataset you anticipate needing and provide evidence that those datasets are available.
-
-#### Methods
-
-Describe your modeling approach.  What sorts of transformations / preprocessing are going to be necessary?  What sorts of modeling techniques will you apply? How are you going to evaluate your models (note that your evaluation should be consistent with stakeholder needs)?
-
-### Project Plan
-
-Tell me what you are going to do and when.  We have roughly two months (final report due during the first week of May).  What milestones do you hope to achieve?  You might organize this as a table.  For example:
-
-Period|Activity|Milestone
-|---|---|---|
-|3/4 - 3/11|Stakeholder analysis </br> EDA </br> Initial exploration with LSTM networks on toy data|Completed stakeholder analysis and data exploration. Additional datasets identified as necessary.
-|3/11 - 3/18|Preprocessing and modeling refinements. Continuing exploration of LSTM and other temporal ML techniques| Initial pass with cleaned data. Candidate approaches for modeling finalized.
-
-etc.
-
-### Risks
-
-This section will describe potential risks to the project. This should include both potential pitfalls and roadblocks, as well as any approaches to mitigation.  What will you do if some aspect of your plan fails?
-
-# Presentations
-
-For this checkpoint, your presentation will have 7 slides, as follows:
-
-1. **Title** A title slide with the names of all team members.  Please introduce yourselves during the presentation.
-2. **Problem** This slide will offer a succinct description of the domain problem. During the presentation, you will describe the problem in sufficient detail for us to understand why this is a machine learning problem (and not some other kind of problem, like statistical analysis).
-3. **Stakeholders** This slide should list major and minor stakeholders. During the presentation, you will characterize the needs of the stakeholders with respect to he domain problem. Be specific! These needs will dictate what you will do.
-4. **The Gap** This slide will 1) explain how the problem is currently addressed today, and 2) why this is inadequate or could otherwise be improved. You should reference specific methods - either from the research literature or industry solutions. This slide should demonstrate that you have done some preliminary research and have an understanding of how people have solved the problem. 
-5. **Data** This slide will introduce the data you are going to use to address the problem.  You **must** have a set of data identified at this point, and you **must** explain why you think it is sufficient and of high quality. If your data is not sufficient, I will ask you to redo your proposal.
-6. **Approach** Explain you approach.  How are you going to model your data?  Which techniques do you anticipate using?  Where do you think the most effort will be?  What resources will you require?
-7. **Risks** What risks to the project do you foresee?  Be realistic, and explain what you will do if they come to pass.
-
-# Grading
-
-- Does your proposal include all of the above mentioned sections? [1 point]
-- Have you clearly identifed your stakeholders and their needs [1 point]
-- Have you answered the 5 Heilmeier questions mentioned effectively [1 point]
-- Is you proposal plan feasible, and do you have sufficient detail to give me confidence that you will succeed? [1 point]
-- Did your presentation address all required points and follow the structure provided above [1 point] 
-
-[^1]: Like this
-
-
+ 
+ 
 
 
